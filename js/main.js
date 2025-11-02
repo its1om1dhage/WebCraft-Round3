@@ -208,6 +208,9 @@ function setupSmoothScroll() {
 // ============================================
 
 function initEventsPage() {
+    // Initialize slider
+    initEventsSlider();
+    
     // Load all events initially
     currentEvents = [...eventsData];
     renderEvents(currentEvents);
@@ -814,3 +817,71 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// ============================================
+// EVENTS PAGE SLIDER
+// ============================================
+
+function initEventsSlider() {
+    const sliderTrack = document.querySelector('.slider-track');
+    if (!sliderTrack) return;
+
+    const slides = document.querySelectorAll('.slider-item');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.querySelector('.slider-prev');
+    const nextBtn = document.querySelector('.slider-next');
+    
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+    }
+
+    // Button events
+    if (nextBtn) {
+        nextBtn.addEventListener('click', nextSlide);
+    }
+    
+    if (prevBtn) {
+        prevBtn.addEventListener('click', prevSlide);
+    }
+
+    // Dot navigation
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentSlide = index;
+            showSlide(currentSlide);
+        });
+    });
+
+    // Auto-play slider
+    let autoPlayInterval = setInterval(nextSlide, 4000);
+
+    // Pause on hover
+    const sliderContainer = document.querySelector('.slider-container');
+    if (sliderContainer) {
+        sliderContainer.addEventListener('mouseenter', () => {
+            clearInterval(autoPlayInterval);
+        });
+
+        sliderContainer.addEventListener('mouseleave', () => {
+            autoPlayInterval = setInterval(nextSlide, 4000);
+        });
+    }
+}
+
