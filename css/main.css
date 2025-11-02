@@ -1,37 +1,37 @@
 /* ============================================
    EVENTVERSE 2025 - MAIN STYLESHEET
-   Modern Cyberpunk Tech Fest Theme
+   Modern Dark Theme
    ============================================ */
 
 /* ============================================
    CSS VARIABLES & ROOT STYLES
    ============================================ */
 :root {
-    /* Color Palette - Advanced Tech Theme */
-    --primary-color: #00ff9d;
-    --primary-dark: #00cc7e;
-    --primary-light: #5fffbb;
-    --secondary-color: #0066ff;
-    --secondary-dark: #0052cc;
-    --accent-color: #ff3366;
+    /* Color Palette - Modern Dark Theme */
+    --primary-color: #3b82f6;
+    --primary-dark: #2563eb;
+    --primary-light: #60a5fa;
+    --secondary-color: #8b5cf6;
+    --secondary-dark: #7c3aed;
+    --accent-color: #14b8a6;
     
     /* Background Colors */
-    --bg-dark: #0d0d0d;
-    --bg-darker: #000000;
-    --bg-card: #1a1a1a;
-    --bg-hover: #252525;
+    --bg-dark: #111827;
+    --bg-darker: #030712;
+    --bg-card: #1f2937;
+    --bg-hover: #374151;
     
     /* Text Colors */
-    --text-primary: #ffffff;
-    --text-secondary: #a0a0a0;
-    --text-muted: #707070;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --text-muted: #9ca3af;
     
     /* UI Colors */
-    --success: #00ff9d;
-    --error: #ff3366;
-    --warning: #ffaa00;
-    --border-color: rgba(0, 255, 157, 0.15);
-    --shadow-color: rgba(0, 255, 157, 0.2);
+    --success: #10b981;
+    --error: #ef4444;
+    --warning: #f59e0b;
+    --border-color: rgba(75, 85, 99, 0.3);
+    --shadow-color: rgba(59, 130, 246, 0.15);
     
     /* Typography */
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -138,7 +138,6 @@ a:focus {
     position: relative;
     display: inline-block;
     width: 100%;
-    text-shadow: 0 0 30px rgba(0, 255, 157, 0.3);
 }
 
 .section-title::after {
@@ -525,9 +524,6 @@ a:focus {
     font-size: clamp(2.5rem, 6vw, 5rem);
     font-weight: 900;
     color: var(--primary-color);
-    text-shadow: 
-        0 0 5px rgba(0, 255, 157, 0.5),
-        0 0 10px rgba(0, 255, 157, 0.3);
     animation: glitch 3s infinite;
     letter-spacing: 0.05em;
 }
@@ -535,23 +531,12 @@ a:focus {
 @keyframes glitch {
     0%, 90%, 100% {
         transform: translate(0);
-        text-shadow: 
-            0 0 5px rgba(0, 255, 157, 0.5),
-            0 0 10px rgba(0, 255, 157, 0.3);
     }
     92% {
         transform: translate(-2px, 2px);
-        text-shadow: 
-            2px -2px 0 rgba(0, 102, 255, 0.5),
-            -2px 2px 0 rgba(255, 51, 102, 0.5),
-            0 0 5px rgba(0, 255, 157, 0.5);
     }
     94% {
         transform: translate(2px, -2px);
-        text-shadow: 
-            -2px 2px 0 rgba(0, 102, 255, 0.5),
-            2px -2px 0 rgba(255, 51, 102, 0.5),
-            0 0 5px rgba(0, 255, 157, 0.5);
     }
     96% {
         transform: translate(-2px, -2px);
@@ -566,17 +551,6 @@ a:focus {
     color: var(--secondary-color);
     margin-bottom: var(--spacing-md);
     font-weight: 600;
-    text-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
-    animation: subtitlePulse 2s ease-in-out infinite alternate;
-}
-
-@keyframes subtitlePulse {
-    0% {
-        text-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
-    }
-    100% {
-        text-shadow: 0 0 30px rgba(0, 102, 255, 0.8), 0 0 40px rgba(0, 102, 255, 0.4);
-    }
 }
 
 .hero-description {
@@ -725,7 +699,6 @@ a:focus {
 .card-icon {
     font-size: 3rem;
     margin-bottom: var(--spacing-sm);
-    filter: drop-shadow(0 0 10px var(--primary-color));
     animation: iconFloat 3s ease-in-out infinite;
 }
 
@@ -911,17 +884,6 @@ a:focus {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: var(--spacing-sm);
-    filter: drop-shadow(0 0 20px rgba(0, 255, 157, 0.5));
-    animation: statGlow 3s ease-in-out infinite alternate;
-}
-
-@keyframes statGlow {
-    0% {
-        filter: drop-shadow(0 0 20px rgba(0, 255, 157, 0.5));
-    }
-    100% {
-        filter: drop-shadow(0 0 30px rgba(0, 255, 157, 0.8));
-    }
 }
 
 .stat-label {
@@ -2178,7 +2140,6 @@ code {
     font-family: 'Courier New', monospace;
     color: var(--primary-color);
     font-weight: 600;
-    text-shadow: 0 0 10px rgba(0, 255, 157, 0.3);
     font-size: 0.9em;
 }
 
