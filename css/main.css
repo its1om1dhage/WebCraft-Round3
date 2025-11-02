@@ -175,7 +175,7 @@ a:focus {
     text-align: center;
     border: 2px solid transparent;
     border-radius: var(--radius-md);
-    cursor: pointer;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="6" fill="%233b82f6"/><circle cx="16" cy="16" r="10" fill="none" stroke="%233b82f6" stroke-width="2.5"/><path d="M16 6 L16 2 M16 30 L16 26 M6 16 L2 16 M30 16 L26 16" stroke="%233b82f6" stroke-width="2.5" stroke-linecap="round"/></svg>') 16 16, pointer;
     transition: all var(--transition-normal);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -393,7 +393,7 @@ a:focus {
     border: 2px solid var(--primary-color);
     border-radius: var(--radius-sm);
     padding: 0.5rem;
-    cursor: pointer;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="6" fill="%233b82f6"/><circle cx="16" cy="16" r="10" fill="none" stroke="%233b82f6" stroke-width="2.5"/><path d="M16 6 L16 2 M16 30 L16 26 M6 16 L2 16 M30 16 L26 16" stroke="%233b82f6" stroke-width="2.5" stroke-linecap="round"/></svg>') 16 16, pointer;
     width: 45px;
     height: 45px;
     position: relative;
@@ -796,7 +796,7 @@ a:focus {
     overflow: hidden;
     border: 1px solid var(--border-color);
     transition: all var(--transition-normal);
-    cursor: pointer;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="6" fill="%233b82f6"/><circle cx="16" cy="16" r="10" fill="none" stroke="%233b82f6" stroke-width="2.5"/><path d="M16 6 L16 2 M16 30 L16 26 M6 16 L2 16 M30 16 L26 16" stroke="%233b82f6" stroke-width="2.5" stroke-linecap="round"/></svg>') 16 16, pointer;
     position: relative;
 }
 
@@ -1497,7 +1497,7 @@ a:focus {
     height: 40px;
     border-radius: 50%;
     font-size: 1.5rem;
-    cursor: pointer;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="6" fill="%233b82f6"/><circle cx="16" cy="16" r="10" fill="none" stroke="%233b82f6" stroke-width="2.5"/><path d="M16 6 L16 2 M16 30 L16 26 M6 16 L2 16 M30 16 L26 16" stroke="%233b82f6" stroke-width="2.5" stroke-linecap="round"/></svg>') 16 16, pointer;
     transition: all var(--transition-fast);
     z-index: 10;
 }
@@ -1838,7 +1838,7 @@ a:focus {
     background: var(--bg-card);
     border: 2px solid var(--border-color);
     border-radius: var(--radius-md);
-    cursor: pointer;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="6" fill="%233b82f6"/><circle cx="16" cy="16" r="10" fill="none" stroke="%233b82f6" stroke-width="2.5"/><path d="M16 6 L16 2 M16 30 L16 26 M6 16 L2 16 M30 16 L26 16" stroke="%233b82f6" stroke-width="2.5" stroke-linecap="round"/></svg>') 16 16, pointer;
     transition: all var(--transition-fast);
     text-align: center;
 }
@@ -1929,7 +1929,7 @@ a:focus {
     border: 1px solid var(--border-color);
     margin-left: var(--spacing-lg);
     transition: all var(--transition-normal);
-    cursor: pointer;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="6" fill="%233b82f6"/><circle cx="16" cy="16" r="10" fill="none" stroke="%233b82f6" stroke-width="2.5"/><path d="M16 6 L16 2 M16 30 L16 26 M6 16 L2 16 M30 16 L26 16" stroke="%233b82f6" stroke-width="2.5" stroke-linecap="round"/></svg>') 16 16, pointer;
 }
 
 .timeline-item::before {
@@ -2219,12 +2219,12 @@ a:focus {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    cursor: pointer;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="6" fill="%233b82f6"/><circle cx="16" cy="16" r="10" fill="none" stroke="%233b82f6" stroke-width="2.5"/><path d="M16 6 L16 2 M16 30 L16 26 M6 16 L2 16 M30 16 L26 16" stroke="%233b82f6" stroke-width="2.5" stroke-linecap="round"/></svg>') 16 16, pointer;
 }
 
 .checkbox-label input[type="checkbox"] {
     width: auto;
-    cursor: pointer;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="6" fill="%233b82f6"/><circle cx="16" cy="16" r="10" fill="none" stroke="%233b82f6" stroke-width="2.5"/><path d="M16 6 L16 2 M16 30 L16 26 M6 16 L2 16 M30 16 L26 16" stroke="%233b82f6" stroke-width="2.5" stroke-linecap="round"/></svg>') 16 16, pointer;
 }
 
 .form-actions {
