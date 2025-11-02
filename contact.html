@@ -41,213 +41,157 @@
     <section class="contact-section">
         <div class="container">
             <div class="contact-grid">
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <h2>Contact Information</h2>
-                    <p>Reach out to us for any queries or assistance regarding EventVerse 2025.</p>
-                    
-                    <div class="info-cards">
-                        <div class="info-card">
-                            <div class="info-icon" aria-hidden="true">📧</div>
-                            <h3>Email</h3>
-                            <p><a href="mailto:info@eventverse.edu">info@eventverse.edu</a></p>
-                        </div>
-                        
-                        <div class="info-card">
-                            <div class="info-icon" aria-hidden="true">📞</div>
-                            <h3>Phone</h3>
-                            <p><a href="tel:+919876543210">+91 98765 43210</a></p>
-                        </div>
-                        
-                        <div class="info-card">
-                            <div class="info-icon" aria-hidden="true">📍</div>
-                            <h3>Address</h3>
-                            <p>Tech Campus Arena<br>Innovation Street<br>Tech City, TC 123456</p>
-                        </div>
-                        
-                        <div class="info-card">
-                            <div class="info-icon" aria-hidden="true">🕐</div>
-                            <h3>Office Hours</h3>
-                            <p>Monday - Friday<br>9:00 AM - 6:00 PM</p>
-                        </div>
-                    </div>
-
-                    <div class="organizers">
-                        <h3>Key Organizers</h3>
-                        <div class="organizer-card">
-                            <h4>Dr. Rajesh Kumar</h4>
-                            <p class="organizer-role">Event Coordinator</p>
-                            <p class="organizer-contact">📧 rajesh.kumar@eventverse.edu<br>📞 +91 98765 43211</p>
-                        </div>
-                        <div class="organizer-card">
-                            <h4>Priya Sharma</h4>
-                            <p class="organizer-role">Technical Events Head</p>
-                            <p class="organizer-contact">📧 priya.sharma@eventverse.edu<br>📞 +91 98765 43212</p>
-                        </div>
-                        <div class="organizer-card">
-                            <h4>Amit Patel</h4>
-                            <p class="organizer-role">Registration & Logistics</p>
-                            <p class="organizer-contact">📧 amit.patel@eventverse.edu<br>📞 +91 98765 43213</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Registration Section -->
-    <section class="registration-section" id="register">
-        <div class="container">
-            <div class="registration-header">
-                <h2><code>&gt;_</code> Register for EventVerse 2025</h2>
-                <p>// Fill out the form below to secure your spot at the biggest tech fest of the year!</p>
-            </div>
-            
-            <form id="registration-form" class="registration-form" novalidate>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="firstName">First Name <span class="required" aria-label="required">*</span></label>
-                        <input 
-                            type="text" 
-                            id="firstName" 
-                            name="firstName" 
-                            required 
-                            aria-required="true"
-                            aria-describedby="firstName-error"
-                        >
-                        <span class="error-message" id="firstName-error" role="alert"></span>
+                <!-- Registration Form -->
+                <div class="registration-form-wrapper">
+                    <div class="registration-header">
+                        <h2><code>&gt;_</code> Register for EventVerse 2025</h2>
+                        <p>// Fill out the form below to secure your spot at the biggest tech fest of the year!</p>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="lastName">Last Name <span class="required" aria-label="required">*</span></label>
-                        <input 
-                            type="text" 
-                            id="lastName" 
-                            name="lastName" 
-                            required 
-                            aria-required="true"
-                            aria-describedby="lastName-error"
-                        >
-                        <span class="error-message" id="lastName-error" role="alert"></span>
-                    </div>
-                </div>
+                    <form id="registration-form" class="registration-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span class="required" aria-label="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="firstName" 
+                                    name="firstName" 
+                                    required 
+                                    aria-required="true"
+                                    aria-describedby="firstName-error"
+                                >
+                                <span class="error-message" id="firstName-error" role="alert"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name <span class="required" aria-label="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="lastName" 
+                                    name="lastName" 
+                                    required 
+                                    aria-required="true"
+                                    aria-describedby="lastName-error"
+                                >
+                                <span class="error-message" id="lastName-error" role="alert"></span>
+                            </div>
+                        </div>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            required 
-                            aria-required="true"
-                            aria-describedby="email-error"
-                        >
-                        <span class="error-message" id="email-error" role="alert"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="phone">Phone Number <span class="required" aria-label="required">*</span></label>
-                        <input 
-                            type="tel" 
-                            id="phone" 
-                            name="phone" 
-                            required 
-                            aria-required="true"
-                            aria-describedby="phone-error"
-                            pattern="[0-9]{10}"
-                        >
-                        <span class="error-message" id="phone-error" role="alert"></span>
-                    </div>
-                </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required 
+                                    aria-required="true"
+                                    aria-describedby="email-error"
+                                >
+                                <span class="error-message" id="email-error" role="alert"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required" aria-label="required">*</span></label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    required 
+                                    aria-required="true"
+                                    aria-describedby="phone-error"
+                                    pattern="[0-9]{10}"
+                                >
+                                <span class="error-message" id="phone-error" role="alert"></span>
+                            </div>
+                        </div>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="college">College/Institution <span class="required" aria-label="required">*</span></label>
-                        <input 
-                            type="text" 
-                            id="college" 
-                            name="college" 
-                            required 
-                            aria-required="true"
-                            aria-describedby="college-error"
-                        >
-                        <span class="error-message" id="college-error" role="alert"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="year">Year of Study <span class="required" aria-label="required">*</span></label>
-                        <select 
-                            id="year" 
-                            name="year" 
-                            required 
-                            aria-required="true"
-                            aria-describedby="year-error"
-                        >
-                            <option value="">Select Year</option>
-                            <option value="1">First Year</option>
-                            <option value="2">Second Year</option>
-                            <option value="3">Third Year</option>
-                            <option value="4">Fourth Year</option>
-                            <option value="postgrad">Post Graduate</option>
-                        </select>
-                        <span class="error-message" id="year-error" role="alert"></span>
-                    </div>
-                </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="college">College/Institution <span class="required" aria-label="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="college" 
+                                    name="college" 
+                                    required 
+                                    aria-required="true"
+                                    aria-describedby="college-error"
+                                >
+                                <span class="error-message" id="college-error" role="alert"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="year">Year of Study <span class="required" aria-label="required">*</span></label>
+                                <select 
+                                    id="year" 
+                                    name="year" 
+                                    required 
+                                    aria-required="true"
+                                    aria-describedby="year-error"
+                                >
+                                    <option value="">Select Year</option>
+                                    <option value="1">First Year</option>
+                                    <option value="2">Second Year</option>
+                                    <option value="3">Third Year</option>
+                                    <option value="4">Fourth Year</option>
+                                    <option value="postgrad">Post Graduate</option>
+                                </select>
+                                <span class="error-message" id="year-error" role="alert"></span>
+                            </div>
+                        </div>
 
-                <div class="form-group">
-                    <label for="events">Events Interested In <span class="required" aria-label="required">*</span></label>
-                    <select 
-                        id="events" 
-                        name="events" 
-                        multiple 
-                        required 
-                        aria-required="true"
-                        aria-describedby="events-error events-help"
-                        size="5"
-                    >
-                        <option value="hackathon">Code Hackathon</option>
-                        <option value="robotics">Robotics Challenge</option>
-                        <option value="ai-workshop">AI/ML Workshop</option>
-                        <option value="webdev">Web Development Competition</option>
-                        <option value="gaming">Gaming Tournament</option>
-                        <option value="design">UI/UX Design Challenge</option>
-                    </select>
-                    <span class="form-help" id="events-help">Hold Ctrl (Cmd on Mac) to select multiple events</span>
-                    <span class="error-message" id="events-error" role="alert"></span>
-                </div>
+                        <div class="form-group">
+                            <label for="events">Events Interested In <span class="required" aria-label="required">*</span></label>
+                            <select 
+                                id="events" 
+                                name="events" 
+                                multiple 
+                                required 
+                                aria-required="true"
+                                aria-describedby="events-error events-help"
+                                size="5"
+                            >
+                                <option value="hackathon">Code Hackathon</option>
+                                <option value="robotics">Robotics Challenge</option>
+                                <option value="ai-workshop">AI/ML Workshop</option>
+                                <option value="webdev">Web Development Competition</option>
+                                <option value="gaming">Gaming Tournament</option>
+                                <option value="design">UI/UX Design Challenge</option>
+                            </select>
+                            <span class="form-help" id="events-help">Hold Ctrl (Cmd on Mac) to select multiple events</span>
+                            <span class="error-message" id="events-error" role="alert"></span>
+                        </div>
 
-                <div class="form-group">
-                    <label for="tshirt">T-Shirt Size <span class="required" aria-label="required">*</span></label>
-                    <select 
-                        id="tshirt" 
-                        name="tshirt" 
-                        required 
-                        aria-required="true"
-                        aria-describedby="tshirt-error"
-                    >
-                        <option value="">Select Size</option>
-                        <option value="S">Small</option>
-                        <option value="M">Medium</option>
-                        <option value="L">Large</option>
-                        <option value="XL">Extra Large</option>
-                        <option value="XXL">XXL</option>
-                    </select>
-                    <span class="error-message" id="tshirt-error" role="alert"></span>
-                </div>
+                        <div class="form-group">
+                            <label for="tshirt">T-Shirt Size <span class="required" aria-label="required">*</span></label>
+                            <select 
+                                id="tshirt" 
+                                name="tshirt" 
+                                required 
+                                aria-required="true"
+                                aria-describedby="tshirt-error"
+                            >
+                                <option value="">Select Size</option>
+                                <option value="S">Small</option>
+                                <option value="M">Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">Extra Large</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                            <span class="error-message" id="tshirt-error" role="alert"></span>
+                        </div>
 
-                <div class="form-group">
-                    <label for="dietary">Dietary Preferences (Optional)</label>
-                    <select id="dietary" name="dietary">
-                        <option value="">No Preference</option>
-                        <option value="vegetarian">Vegetarian</option>
-                        <option value="vegan">Vegan</option>
-                        <option value="non-veg">Non-Vegetarian</option>
-                    </select>
-                </div>
+                        <div class="form-group">
+                            <label for="dietary">Dietary Preferences (Optional)</label>
+                            <select id="dietary" name="dietary">
+                                <option value="">No Preference</option>
+                                <option value="vegetarian">Vegetarian</option>
+                                <option value="vegan">Vegan</option>
+                                <option value="non-veg">Non-Vegetarian</option>
+                            </select>
+                        </div>
 
-                <div class="form-group checkbox-group">
+                        <div class="form-group checkbox-group">
                     <label class="checkbox-label">
                         <input 
                             type="checkbox" 
@@ -275,6 +219,49 @@
                 <p>Thank you for registering for EventVerse 2025. We've sent a confirmation email to your registered email address.</p>
                 <p>See you at the fest! 🎉</p>
                 <button class="btn btn-primary" onclick="window.location.reload()">Register Another Person</button>
+            </div>
+                </div>
+
+                <!-- Contact Information Sidebar -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Reach out to us for any queries or assistance regarding EventVerse 2025.</p>
+                    
+                    <div class="info-cards">
+                        <div class="contact-info-card">
+                            <div class="info-icon" aria-hidden="true">📧</div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@eventverse.edu">info@eventverse.edu</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="info-icon" aria-hidden="true">📞</div>
+                            <div class="info-content">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="info-icon" aria-hidden="true">📍</div>
+                            <div class="info-content">
+                                <h3>Address</h3>
+                                <p>Tech Campus Arena<br>Innovation Street<br>Tech City, TC 123456</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="info-icon" aria-hidden="true">🕐</div>
+                            <div class="info-content">
+                                <h3>Office Hours</h3>
+                                <p>Monday - Friday<br>9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
