@@ -818,9 +818,17 @@ function initEventsSlider() {
     
     let currentSlide = 0;
     const totalSlides = slides.length;
+    let isInitialized = false;
 
-    function updateSlidePositions() {
+    function updateSlidePositions(animate = true) {
         slides.forEach((slide, index) => {
+            // Add animate class only after initial load
+            if (animate && isInitialized) {
+                slide.classList.add('animate');
+            } else {
+                slide.classList.remove('animate');
+            }
+            
             slide.classList.remove('active', 'prev', 'next', 'hidden');
             
             if (index === currentSlide) {
@@ -842,12 +850,12 @@ function initEventsSlider() {
 
     function nextSlide() {
         currentSlide = (currentSlide + 1) % totalSlides;
-        updateSlidePositions();
+        updateSlidePositions(true);
     }
 
     function prevSlide() {
         currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        updateSlidePositions();
+        updateSlidePositions(true);
     }
 
     // Button events
@@ -863,12 +871,12 @@ function initEventsSlider() {
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
             currentSlide = index;
-            updateSlidePositions();
+            updateSlidePositions(true);
         });
     });
 
-    // Auto-play slider
-    let autoPlayInterval = setInterval(nextSlide, 4000);
+    // Auto-play slider with faster interval
+    let autoPlayInterval = setInterval(nextSlide, 3000);
 
     // Pause on hover
     const sliderContainer = document.querySelector('.slider-container');
@@ -878,12 +886,17 @@ function initEventsSlider() {
         });
 
         sliderContainer.addEventListener('mouseleave', () => {
-            autoPlayInterval = setInterval(nextSlide, 4000);
+            autoPlayInterval = setInterval(nextSlide, 3000);
         });
     }
 
-    // Initialize positions
-    updateSlidePositions();
+    // Initialize positions without animation
+    updateSlidePositions(false);
+    
+    // Mark as initialized after a short delay
+    setTimeout(() => {
+        isInitialized = true;
+    }, 100);
 }
 
 
