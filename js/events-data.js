@@ -489,14 +489,6 @@ const eventsData = [
     }
 ];
 
-// Helper function to get events by category
-function getEventsByCategory(category) {
-    if (category === 'all') {
-        return eventsData;
-    }
-    return eventsData.filter(event => event.category === category);
-}
-
 // Helper function to get events by date
 function getEventsByDate(date) {
     if (date === 'all') {
