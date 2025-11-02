@@ -49,168 +49,206 @@
                     </div>
                     
                     <form id="registration-form" class="registration-form" novalidate>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">First Name <span class="required" aria-label="required">*</span></label>
-                                <input 
-                                    type="text" 
-                                    id="firstName" 
-                                    name="firstName" 
-                                    required 
-                                    aria-required="true"
-                                    aria-describedby="firstName-error"
-                                >
-                                <span class="error-message" id="firstName-error" role="alert"></span>
+                        <!-- Personal Information Section -->
+                        <div class="form-section">
+                            <h3 class="section-title">
+                                <span class="section-icon">👤</span>
+                                Personal Information
+                            </h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name <span class="required" aria-label="required">*</span></label>
+                                    <input 
+                                        type="text" 
+                                        id="firstName" 
+                                        name="firstName" 
+                                        placeholder="Enter your first name"
+                                        required 
+                                        aria-required="true"
+                                        aria-describedby="firstName-error"
+                                    >
+                                    <span class="error-message" id="firstName-error" role="alert"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastName">Last Name <span class="required" aria-label="required">*</span></label>
+                                    <input 
+                                        type="text" 
+                                        id="lastName" 
+                                        name="lastName" 
+                                        placeholder="Enter your last name"
+                                        required 
+                                        aria-required="true"
+                                        aria-describedby="lastName-error"
+                                    >
+                                    <span class="error-message" id="lastName-error" role="alert"></span>
+                                </div>
                             </div>
-                            
-                            <div class="form-group">
-                                <label for="lastName">Last Name <span class="required" aria-label="required">*</span></label>
-                                <input 
-                                    type="text" 
-                                    id="lastName" 
-                                    name="lastName" 
-                                    required 
-                                    aria-required="true"
-                                    aria-describedby="lastName-error"
-                                >
-                                <span class="error-message" id="lastName-error" role="alert"></span>
-                            </div>
-                        </div>
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    name="email" 
-                                    required 
-                                    aria-required="true"
-                                    aria-describedby="email-error"
-                                >
-                                <span class="error-message" id="email-error" role="alert"></span>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phone">Phone Number <span class="required" aria-label="required">*</span></label>
-                                <input 
-                                    type="tel" 
-                                    id="phone" 
-                                    name="phone" 
-                                    required 
-                                    aria-required="true"
-                                    aria-describedby="phone-error"
-                                    pattern="[0-9]{10}"
-                                >
-                                <span class="error-message" id="phone-error" role="alert"></span>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="college">College/Institution <span class="required" aria-label="required">*</span></label>
-                                <input 
-                                    type="text" 
-                                    id="college" 
-                                    name="college" 
-                                    required 
-                                    aria-required="true"
-                                    aria-describedby="college-error"
-                                >
-                                <span class="error-message" id="college-error" role="alert"></span>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="year">Year of Study <span class="required" aria-label="required">*</span></label>
-                                <select 
-                                    id="year" 
-                                    name="year" 
-                                    required 
-                                    aria-required="true"
-                                    aria-describedby="year-error"
-                                >
-                                    <option value="">Select Year</option>
-                                    <option value="1">First Year</option>
-                                    <option value="2">Second Year</option>
-                                    <option value="3">Third Year</option>
-                                    <option value="4">Fourth Year</option>
-                                    <option value="postgrad">Post Graduate</option>
-                                </select>
-                                <span class="error-message" id="year-error" role="alert"></span>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        name="email" 
+                                        placeholder="your.email@example.com"
+                                        required 
+                                        aria-required="true"
+                                        aria-describedby="email-error"
+                                    >
+                                    <span class="error-message" id="email-error" role="alert"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span class="required" aria-label="required">*</span></label>
+                                    <input 
+                                        type="tel" 
+                                        id="phone" 
+                                        name="phone" 
+                                        placeholder="10-digit mobile number"
+                                        required 
+                                        aria-required="true"
+                                        aria-describedby="phone-error"
+                                        pattern="[0-9]{10}"
+                                    >
+                                    <span class="error-message" id="phone-error" role="alert"></span>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="events">Events Interested In <span class="required" aria-label="required">*</span></label>
-                            <select 
-                                id="events" 
-                                name="events" 
-                                multiple 
-                                required 
-                                aria-required="true"
-                                aria-describedby="events-error events-help"
-                                size="5"
-                            >
-                                <option value="hackathon">Code Hackathon</option>
-                                <option value="robotics">Robotics Challenge</option>
-                                <option value="ai-workshop">AI/ML Workshop</option>
-                                <option value="webdev">Web Development Competition</option>
-                                <option value="gaming">Gaming Tournament</option>
-                                <option value="design">UI/UX Design Challenge</option>
-                            </select>
-                            <span class="form-help" id="events-help">Hold Ctrl (Cmd on Mac) to select multiple events</span>
-                            <span class="error-message" id="events-error" role="alert"></span>
+                        <!-- Academic Information Section -->
+                        <div class="form-section">
+                            <h3 class="section-title">
+                                <span class="section-icon">🎓</span>
+                                Academic Details
+                            </h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="college">College/Institution <span class="required" aria-label="required">*</span></label>
+                                    <input 
+                                        type="text" 
+                                        id="college" 
+                                        name="college" 
+                                        placeholder="Your college or institution name"
+                                        required 
+                                        aria-required="true"
+                                        aria-describedby="college-error"
+                                    >
+                                    <span class="error-message" id="college-error" role="alert"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="year">Year of Study <span class="required" aria-label="required">*</span></label>
+                                    <select 
+                                        id="year" 
+                                        name="year" 
+                                        required 
+                                        aria-required="true"
+                                        aria-describedby="year-error"
+                                    >
+                                        <option value="">-- Select Year --</option>
+                                        <option value="1">First Year</option>
+                                        <option value="2">Second Year</option>
+                                        <option value="3">Third Year</option>
+                                        <option value="4">Fourth Year</option>
+                                        <option value="postgrad">Post Graduate</option>
+                                    </select>
+                                    <span class="error-message" id="year-error" role="alert"></span>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="tshirt">T-Shirt Size <span class="required" aria-label="required">*</span></label>
-                            <select 
-                                id="tshirt" 
-                                name="tshirt" 
-                                required 
-                                aria-required="true"
-                                aria-describedby="tshirt-error"
-                            >
-                                <option value="">Select Size</option>
-                                <option value="S">Small</option>
-                                <option value="M">Medium</option>
-                                <option value="L">Large</option>
-                                <option value="XL">Extra Large</option>
-                                <option value="XXL">XXL</option>
-                            </select>
-                            <span class="error-message" id="tshirt-error" role="alert"></span>
+                        <!-- Event Preferences Section -->
+                        <div class="form-section">
+                            <h3 class="section-title">
+                                <span class="section-icon">🎯</span>
+                                Event Preferences
+                            </h3>
+                            <div class="form-group">
+                                <label for="events">Select Events <span class="required" aria-label="required">*</span></label>
+                                <div class="checkbox-grid">
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="events" value="hackathon" required>
+                                        <span class="checkbox-content">
+                                            <span class="checkbox-icon">💻</span>
+                                            <span class="checkbox-text">Code Hackathon</span>
+                                        </span>
+                                    </label>
+                                    
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="events" value="robotics">
+                                        <span class="checkbox-content">
+                                            <span class="checkbox-icon">🤖</span>
+                                            <span class="checkbox-text">Robotics Challenge</span>
+                                        </span>
+                                    </label>
+                                    
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="events" value="ai-workshop">
+                                        <span class="checkbox-content">
+                                            <span class="checkbox-icon">🧠</span>
+                                            <span class="checkbox-text">AI/ML Workshop</span>
+                                        </span>
+                                    </label>
+                                    
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="events" value="webdev">
+                                        <span class="checkbox-content">
+                                            <span class="checkbox-icon">🌐</span>
+                                            <span class="checkbox-text">Web Development</span>
+                                        </span>
+                                    </label>
+                                    
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="events" value="gaming">
+                                        <span class="checkbox-content">
+                                            <span class="checkbox-icon">🎮</span>
+                                            <span class="checkbox-text">Gaming Tournament</span>
+                                        </span>
+                                    </label>
+                                    
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="events" value="design">
+                                        <span class="checkbox-content">
+                                            <span class="checkbox-icon">🎨</span>
+                                            <span class="checkbox-text">UI/UX Design</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <span class="form-help">Select at least one event you'd like to participate in</span>
+                                <span class="error-message" id="events-error" role="alert"></span>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="dietary">Dietary Preferences (Optional)</label>
-                            <select id="dietary" name="dietary">
-                                <option value="">No Preference</option>
-                                <option value="vegetarian">Vegetarian</option>
-                                <option value="vegan">Vegan</option>
-                                <option value="non-veg">Non-Vegetarian</option>
-                            </select>
+                        <!-- Terms and Submit Section -->
+                        <div class="form-section">
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label terms-checkbox">
+                                    <input 
+                                        type="checkbox" 
+                                        id="terms" 
+                                        name="terms" 
+                                        required 
+                                        aria-required="true"
+                                        aria-describedby="terms-error"
+                                    >
+                                    <span>I agree to the <a href="#" class="terms-link">terms and conditions</a> and <a href="#" class="terms-link">privacy policy</a> <span class="required">*</span></span>
+                                </label>
+                                <span class="error-message" id="terms-error" role="alert"></span>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-large">
+                                    <span>Submit Registration</span>
+                                    <span class="btn-arrow">→</span>
+                                </button>
+                                <button type="reset" class="btn btn-secondary">
+                                    <span>Clear Form</span>
+                                </button>
+                            </div>
                         </div>
-
-                        <div class="form-group checkbox-group">
-                    <label class="checkbox-label">
-                        <input 
-                            type="checkbox" 
-                            id="terms" 
-                            name="terms" 
-                            required 
-                            aria-required="true"
-                            aria-describedby="terms-error"
-                        >
-                        <span>I agree to the terms and conditions <span class="required" aria-label="required">*</span></span>
-                    </label>
-                    <span class="error-message" id="terms-error" role="alert"></span>
-                </div>
-
-                <div class="form-actions">
-                    <button type="submit" class="btn btn-primary btn-large">Submit Registration</button>
-                    <button type="reset" class="btn btn-secondary">Clear Form</button>
-                </div>
-            </form>
+                    </form>
 
             <!-- Success Message -->
             <div id="success-message" class="success-message" style="display: none;" role="alert">
