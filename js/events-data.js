@@ -147,106 +147,9 @@ const eventsData = [
         contact: "Sneha Reddy - sneha.reddy@eventverse.edu - +91 98765 43216",
         featured: true
     },
-    // Gaming Events
-    {
-        id: 7,
-        title: "BGMI Tournament",
-        category: "gaming",
-        date: "2025-03-15",
-        time: "10:00",
-        endTime: "18:00",
-        venue: "Gaming Arena",
-        prize: "₹80,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/ffff00?text=BGMI+Tournament",
-        description: "Battle royale tournament featuring BGMI. Form your squad and fight for victory!",
-        fullDescription: "Intense Battle Grounds Mobile India tournament with multiple rounds. Teams will compete in classic mode matches, with points awarded for kills and placement. Top teams advance to finals.",
-        rules: [
-            "Squad mode (4 members per team)",
-            "TPP (Third Person Perspective)",
-            "Multiple rounds - points based system",
-            "No emulators allowed - mobile only",
-            "Latest game version required",
-            "Fair play policy strictly enforced",
-            "Devices will be checked before matches"
-        ],
-        contact: "Rohan Kapoor - rohan.kapoor@eventverse.edu - +91 98765 43217",
-        featured: true
-    },
-    {
-        id: 8,
-        title: "Valorant Championship",
-        category: "gaming",
-        date: "2025-03-16",
-        time: "11:00",
-        endTime: "19:00",
-        venue: "Gaming Arena",
-        prize: "₹70,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/ff00ff?text=Valorant+Championship",
-        description: "5v5 tactical FPS tournament. Showcase your strategic gameplay and aim in competitive matches.",
-        fullDescription: "Compete in Valorant's tactical 5v5 matches. Teams will battle through group stages and knockout rounds. Strategic team play, communication, and individual skill will determine the champions.",
-        rules: [
-            "Team size: 5 players + 1 substitute",
-            "Best of 3 format (Finals: Best of 5)",
-            "Tournament mode settings",
-            "All agents allowed",
-            "No external software/cheats",
-            "Pause rules: Max 2 per match",
-            "Admin decisions are final"
-        ],
-        contact: "Arjun Mehta - arjun.mehta@eventverse.edu - +91 98765 43218",
-        featured: false
-    },
-    {
-        id: 9,
-        title: "FIFA Tournament",
-        category: "gaming",
-        date: "2025-03-17",
-        time: "10:00",
-        endTime: "16:00",
-        venue: "Gaming Zone B",
-        prize: "₹40,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/00f0ff?text=FIFA+Tournament",
-        description: "The beautiful game in digital form. Compete in the ultimate FIFA tournament.",
-        fullDescription: "Show off your FIFA skills in this exciting tournament. Players will compete in knockout rounds on the latest FIFA version with standard tournament settings.",
-        rules: [
-            "Individual competition",
-            "Latest FIFA version",
-            "6-minute halves",
-            "Team selection: 4.5 star rated teams",
-            "No custom tactics restrictions",
-            "Single elimination knockout",
-            "Controllers provided"
-        ],
-        contact: "Karan Joshi - karan.joshi@eventverse.edu - +91 98765 43219",
-        featured: false
-    },
-    {
-        id: 10,
-        title: "Chess Championship",
-        category: "gaming",
-        date: "2025-03-15",
-        time: "09:00",
-        endTime: "17:00",
-        venue: "Indoor Stadium",
-        prize: "₹35,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/ffff00?text=Chess+Championship",
-        description: "Classic board game competition. Test your strategic thinking and tactical prowess.",
-        fullDescription: "Traditional chess tournament following FIDE rules. Multiple rounds of classical chess with time controls. All skill levels welcome.",
-        rules: [
-            "Individual competition",
-            "Classical time control: 30+30",
-            "FIDE rules apply",
-            "No electronic devices allowed",
-            "Touch-move rule in effect",
-            "Arbiter decisions final",
-            "Rating categories for fair matchmaking"
-        ],
-        contact: "Deepak Sharma - deepak.sharma@eventverse.edu - +91 98765 43220",
-        featured: false
-    },
     // Cultural Events
     {
-        id: 11,
+        id: 7,
         title: "Tech Talk Show",
         category: "cultural",
         date: "2025-03-16",
@@ -270,7 +173,7 @@ const eventsData = [
         featured: true
     },
     {
-        id: 12,
+        id: 8,
         title: "Tech Drama Competition",
         category: "cultural",
         date: "2025-03-17",
@@ -293,57 +196,9 @@ const eventsData = [
         contact: "Kavya Iyer - kavya.iyer@eventverse.edu - +91 98765 43222",
         featured: false
     },
-    {
-        id: 13,
-        title: "DJ Night",
-        category: "cultural",
-        date: "2025-03-17",
-        time: "19:00",
-        endTime: "23:00",
-        venue: "Main Ground",
-        prize: "Free Entry",
-        image: "https://via.placeholder.com/400x300/0a0a1a/ffff00?text=DJ+Night",
-        description: "End the fest with an electrifying DJ night. Dance and celebrate with fellow tech enthusiasts!",
-        fullDescription: "Celebrate the conclusion of EventVerse with a spectacular DJ night featuring popular artists. Dance the night away with amazing music, lights, and energy!",
-        rules: [
-            "Open to all registered participants",
-            "Entry with fest ID card only",
-            "No outside food/drinks allowed",
-            "Follow security guidelines",
-            "Respect fellow participants",
-            "Event timings strictly followed",
-            "Photography allowed"
-        ],
-        contact: "Ravi Kumar - ravi.kumar@eventverse.edu - +91 98765 43223",
-        featured: true
-    },
-    {
-        id: 14,
-        title: "Photography Contest",
-        category: "cultural",
-        date: "2025-03-15",
-        time: "08:00",
-        endTime: "18:00",
-        venue: "Campus-wide",
-        prize: "₹25,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/ff00ff?text=Photography+Contest",
-        description: "Capture the essence of EventVerse through your lens. Best tech and fest moments.",
-        fullDescription: "Roaming photography competition throughout the fest. Capture candid moments, tech events, cultural performances, and the vibrant atmosphere of EventVerse.",
-        rules: [
-            "Individual competition",
-            "Digital cameras or smartphones",
-            "Theme: EventVerse 2025",
-            "Submit 5 best photos",
-            "Minimal editing allowed",
-            "Must be clicked during the fest",
-            "Photo rights shared with organizers"
-        ],
-        contact: "Simran Kaur - simran.kaur@eventverse.edu - +91 98765 43224",
-        featured: false
-    },
     // Workshop Events
     {
-        id: 15,
+        id: 9,
         title: "Blockchain Workshop",
         category: "workshops",
         date: "2025-03-16",
@@ -367,7 +222,7 @@ const eventsData = [
         featured: false
     },
     {
-        id: 16,
+        id: 10,
         title: "UI/UX Design Workshop",
         category: "workshops",
         date: "2025-03-15",
@@ -391,7 +246,7 @@ const eventsData = [
         featured: false
     },
     {
-        id: 17,
+        id: 11,
         title: "Cloud Computing Workshop",
         category: "workshops",
         date: "2025-03-17",
@@ -415,7 +270,7 @@ const eventsData = [
         featured: false
     },
     {
-        id: 18,
+        id: 12,
         title: "IoT Workshop",
         category: "workshops",
         date: "2025-03-16",
@@ -440,7 +295,7 @@ const eventsData = [
     },
     // Additional Technical Events
     {
-        id: 19,
+        id: 13,
         title: "Data Science Challenge",
         category: "technical",
         date: "2025-03-17",
@@ -464,7 +319,7 @@ const eventsData = [
         featured: false
     },
     {
-        id: 20,
+        id: 14,
         title: "UI/UX Design Challenge",
         category: "technical",
         date: "2025-03-15",
