@@ -12,7 +12,7 @@ const eventsData = [
         endTime: "18:00",
         venue: "Tech Lab A",
         prize: "₹1,00,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/00f0ff?text=Code+Hackathon",
+        image: "img/E1.png",
         description: "24-hour coding marathon where teams build innovative solutions to real-world problems. Showcase your coding prowess and creative problem-solving skills.",
         fullDescription: "Join us for an intense 24-hour coding challenge where innovation meets execution. Teams of 2-4 members will work together to develop solutions for real-world problems across various domains including healthcare, education, sustainability, and more.",
         rules: [
@@ -36,7 +36,7 @@ const eventsData = [
         endTime: "16:00",
         venue: "Innovation Arena",
         prize: "₹75,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/ff00ff?text=Robotics+Challenge",
+        image: "img/E2.jpg",
         description: "Design and build autonomous robots to complete challenging tasks. Test your mechanical and programming skills.",
         fullDescription: "Build autonomous robots that can navigate obstacle courses, complete precision tasks, and demonstrate innovative engineering solutions. This competition tests both hardware design and software programming capabilities.",
         rules: [
@@ -60,7 +60,7 @@ const eventsData = [
         endTime: "17:00",
         venue: "Seminar Hall 1",
         prize: "Certificate",
-        image: "https://via.placeholder.com/400x300/0a0a1a/ffff00?text=AI+ML+Workshop",
+        image: "img/E3.jpg",
         description: "Hands-on workshop on Artificial Intelligence and Machine Learning fundamentals. Learn from industry experts.",
         fullDescription: "Comprehensive workshop covering the fundamentals of AI and Machine Learning. Learn about neural networks, deep learning, natural language processing, and computer vision through practical examples and hands-on exercises.",
         rules: [
@@ -84,7 +84,7 @@ const eventsData = [
         endTime: "15:00",
         venue: "Computer Lab B",
         prize: "₹50,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/00f0ff?text=Web+Dev+Competition",
+        image: "img/E4.jpg",
         description: "Build responsive and innovative web applications. Showcase your front-end and back-end development skills.",
         fullDescription: "Create stunning, responsive web applications within the time limit. Participants will receive a problem statement and must develop a complete solution including UI/UX design, front-end implementation, and basic back-end functionality.",
         rules: [
@@ -108,7 +108,7 @@ const eventsData = [
         endTime: "16:00",
         venue: "Security Lab",
         prize: "₹60,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/ff00ff?text=Cyber+Security+CTF",
+        image: "img/E5.jpg",
         description: "Capture The Flag competition testing your hacking and security skills. Solve challenges across multiple domains.",
         fullDescription: "Test your cybersecurity knowledge in this exciting Capture The Flag competition. Solve challenges in cryptography, web exploitation, reverse engineering, forensics, and more to earn points and climb the leaderboard.",
         rules: [
@@ -132,7 +132,7 @@ const eventsData = [
         endTime: "17:00",
         venue: "Tech Lab C",
         prize: "₹45,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/00f0ff?text=Mobile+App+Dev",
+        image: "img/E6.png",
         description: "Create innovative mobile applications for Android or iOS. Solve real-world problems through mobile technology.",
         fullDescription: "Develop creative mobile applications that address real-world challenges. Participants can choose either Android or iOS platform and must demonstrate functionality, user experience, and innovation.",
         rules: [
@@ -157,7 +157,7 @@ const eventsData = [
         endTime: "18:00",
         venue: "Main Auditorium",
         prize: "₹30,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/ff00ff?text=Tech+Talk+Show",
+        image: "img/E7.jpg",
         description: "Present innovative tech ideas through engaging talks. Inspire the audience with your vision.",
         fullDescription: "TED-style tech talks where participants present their innovative ideas, research, or visions for the future of technology. Each speaker gets 10-15 minutes to inspire and educate the audience.",
         rules: [
@@ -181,7 +181,7 @@ const eventsData = [
         endTime: "18:00",
         venue: "Open Air Theatre",
         prize: "₹40,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/00f0ff?text=Tech+Drama",
+        image: "img/E8.webp",
         description: "Theatrical performances with technology themes. Blend art and tech in creative storytelling.",
         fullDescription: "Stage plays and theatrical performances centered around technology themes. Explore the impact of technology on society, future scenarios, or historical tech moments through drama.",
         rules: [
@@ -206,7 +206,7 @@ const eventsData = [
         endTime: "13:00",
         venue: "Seminar Hall 2",
         prize: "Certificate",
-        image: "https://via.placeholder.com/400x300/0a0a1a/00f0ff?text=Blockchain+Workshop",
+        image: "img/E9.jpg",
         description: "Learn blockchain fundamentals and smart contract development. Build your first DApp.",
         fullDescription: "Comprehensive workshop on blockchain technology covering fundamentals, cryptocurrency basics, smart contracts, and decentralized application development. Hands-on session to deploy your first smart contract.",
         rules: [
@@ -230,7 +230,7 @@ const eventsData = [
         endTime: "13:00",
         venue: "Design Studio",
         prize: "Certificate",
-        image: "https://via.placeholder.com/400x300/0a0a1a/ffff00?text=UIUX+Workshop",
+        image: "img/E10.png",
         description: "Master the art of user interface and experience design. Learn design thinking and prototyping.",
         fullDescription: "Learn the principles of great UI/UX design including design thinking, user research, wireframing, prototyping, and usability testing. Create your own app design during the workshop.",
         rules: [
@@ -254,7 +254,7 @@ const eventsData = [
         endTime: "12:00",
         venue: "Seminar Hall 3",
         prize: "Certificate",
-        image: "https://via.placeholder.com/400x300/0a0a1a/ff00ff?text=Cloud+Workshop",
+        image: "img/E11.webp",
         description: "Hands-on AWS/Azure cloud services workshop. Deploy your first cloud application.",
         fullDescription: "Practical workshop on cloud computing covering AWS and Azure services. Learn about EC2, S3, Lambda, virtual machines, and more. Deploy a real application to the cloud.",
         rules: [
@@ -278,7 +278,7 @@ const eventsData = [
         endTime: "17:00",
         venue: "Electronics Lab",
         prize: "Certificate",
-        image: "https://via.placeholder.com/400x300/0a0a1a/00f0ff?text=IoT+Workshop",
+        image: "img/E12.png",
         description: "Internet of Things fundamentals and project building. Work with sensors and microcontrollers.",
         fullDescription: "Introduction to IoT with hands-on projects using Arduino/ESP32. Learn about sensors, actuators, connectivity protocols, and build smart IoT devices.",
         rules: [
@@ -303,7 +303,7 @@ const eventsData = [
         endTime: "15:00",
         venue: "Data Lab",
         prize: "₹55,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/ffff00?text=Data+Science",
+        image: "img/E13.jpg",
         description: "Analyze datasets and build predictive models. Showcase your data analysis and ML skills.",
         fullDescription: "Comprehensive data science competition where participants analyze complex datasets, perform exploratory data analysis, build machine learning models, and present insights.",
         rules: [
@@ -327,7 +327,7 @@ const eventsData = [
         endTime: "18:00",
         venue: "Design Studio",
         prize: "₹40,000",
-        image: "https://via.placeholder.com/400x300/0a0a1a/ff00ff?text=Design+Challenge",
+        image: "img/E14.jpg",
         description: "Design beautiful and functional user interfaces. Focus on user experience and visual design.",
         fullDescription: "Create stunning UI/UX designs for given problem statements. Participants will design complete app/website interfaces focusing on usability, aesthetics, and user experience.",
         rules: [
