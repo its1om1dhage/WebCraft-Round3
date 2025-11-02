@@ -223,15 +223,11 @@ function initEventsPage() {
 }
 
 function setupEventFilters() {
-    const categoryFilter = document.getElementById('category-filter');
     const dateFilter = document.getElementById('date-filter');
     const sortFilter = document.getElementById('sort-filter');
     const searchInput = document.getElementById('search-input');
     const resetButton = document.getElementById('reset-filters');
     
-    if (categoryFilter) {
-        categoryFilter.addEventListener('change', applyFilters);
-    }
     
     if (dateFilter) {
         dateFilter.addEventListener('change', applyFilters);
@@ -256,17 +252,13 @@ function setupEventFilters() {
 }
 
 function applyFilters() {
-    const categoryFilter = document.getElementById('category-filter');
     const dateFilter = document.getElementById('date-filter');
     const sortFilter = document.getElementById('sort-filter');
     const searchInput = document.getElementById('search-input');
-    
+
     let filtered = [...eventsData];
-    
-    // Apply category filter
-    if (categoryFilter && categoryFilter.value !== 'all') {
-        filtered = getEventsByCategory(categoryFilter.value);
-    }
+
+    // (Category filter removed) - start filtering from all events
     
     // Apply date filter
     if (dateFilter && dateFilter.value !== 'all') {
@@ -294,12 +286,10 @@ function applyFilters() {
 }
 
 function resetFilters() {
-    const categoryFilter = document.getElementById('category-filter');
     const dateFilter = document.getElementById('date-filter');
     const sortFilter = document.getElementById('sort-filter');
     const searchInput = document.getElementById('search-input');
     
-    if (categoryFilter) categoryFilter.value = 'all';
     if (dateFilter) dateFilter.value = 'all';
     if (sortFilter) sortFilter.value = 'name';
     if (searchInput) searchInput.value = '';
@@ -746,12 +736,7 @@ function trapModalFocus(e) {
 
 function applyUrlParameters() {
     const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get('category');
-    
-    if (category && document.getElementById('category-filter')) {
-        document.getElementById('category-filter').value = category;
-        applyFilters();
-    }
+    // Category parameter support removed (category filter control no longer present).
 }
 
 // ============================================
