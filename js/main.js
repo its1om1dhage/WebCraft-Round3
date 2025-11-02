@@ -834,22 +834,35 @@ function initEventsSlider() {
     let currentSlide = 0;
     const totalSlides = slides.length;
 
-    function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        dots.forEach(dot => dot.classList.remove('active'));
+    function updateSlidePositions() {
+        slides.forEach((slide, index) => {
+            slide.classList.remove('active', 'prev', 'next', 'hidden');
+            
+            if (index === currentSlide) {
+                slide.classList.add('active');
+            } else if (index === (currentSlide - 1 + totalSlides) % totalSlides) {
+                slide.classList.add('prev');
+            } else if (index === (currentSlide + 1) % totalSlides) {
+                slide.classList.add('next');
+            } else {
+                slide.classList.add('hidden');
+            }
+        });
         
-        slides[index].classList.add('active');
-        dots[index].classList.add('active');
+        // Update dots
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
     }
 
     function nextSlide() {
         currentSlide = (currentSlide + 1) % totalSlides;
-        showSlide(currentSlide);
+        updateSlidePositions();
     }
 
     function prevSlide() {
         currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        showSlide(currentSlide);
+        updateSlidePositions();
     }
 
     // Button events
@@ -865,7 +878,7 @@ function initEventsSlider() {
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
             currentSlide = index;
-            showSlide(currentSlide);
+            updateSlidePositions();
         });
     });
 
@@ -883,5 +896,9 @@ function initEventsSlider() {
             autoPlayInterval = setInterval(nextSlide, 4000);
         });
     }
+
+    // Initialize positions
+    updateSlidePositions();
 }
+
 
