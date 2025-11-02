@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete schedule for EventVerse 2025. View all events by day and time.">
+    <title>Schedule - EventVerse 2025</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" aria-label="EventVerse Home">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">EventVerse</span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="events.html" role="menuitem">Events</a></li>
+                <li role="none"><a href="schedule.html" role="menuitem" aria-current="page">Schedule</a></li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                <li role="none"><a href="contact.html#register" class="btn-nav" role="menuitem">Register Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Event Schedule</h1>
+            <p>Plan your EventVerse 2025 experience</p>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section">
+        <div class="container">
+            <!-- Day Filter Tabs -->
+            <div class="day-tabs" role="tablist" aria-label="Event days">
+                <button class="day-tab active" role="tab" aria-selected="true" aria-controls="day1-panel" id="day1-tab" data-day="2025-03-15">
+                    <span class="tab-day">Day 1</span>
+                    <span class="tab-date">March 15, 2025</span>
+                </button>
+                <button class="day-tab" role="tab" aria-selected="false" aria-controls="day2-panel" id="day2-tab" data-day="2025-03-16" tabindex="-1">
+                    <span class="tab-day">Day 2</span>
+                    <span class="tab-date">March 16, 2025</span>
+                </button>
+                <button class="day-tab" role="tab" aria-selected="false" aria-controls="day3-panel" id="day3-tab" data-day="2025-03-17" tabindex="-1">
+                    <span class="tab-day">Day 3</span>
+                    <span class="tab-date">March 17, 2025</span>
+                </button>
+                <button class="day-tab" role="tab" aria-selected="false" aria-controls="all-panel" id="all-tab" data-day="all" tabindex="-1">
+                    <span class="tab-day">All Days</span>
+                    <span class="tab-date">Complete Schedule</span>
+                </button>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="timeline-container">
+                <div id="day1-panel" class="timeline-panel active" role="tabpanel" aria-labelledby="day1-tab">
+                    <div class="timeline" id="timeline-day1">
+                        <!-- Events will be loaded dynamically -->
+                    </div>
+                </div>
+                <div id="day2-panel" class="timeline-panel" role="tabpanel" aria-labelledby="day2-tab" hidden>
+                    <div class="timeline" id="timeline-day2">
+                        <!-- Events will be loaded dynamically -->
+                    </div>
+                </div>
+                <div id="day3-panel" class="timeline-panel" role="tabpanel" aria-labelledby="day3-tab" hidden>
+                    <div class="timeline" id="timeline-day3">
+                        <!-- Events will be loaded dynamically -->
+                    </div>
+                </div>
+                <div id="all-panel" class="timeline-panel" role="tabpanel" aria-labelledby="all-tab" hidden>
+                    <div class="timeline" id="timeline-all">
+                        <!-- Events will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Schedule -->
+            <div class="schedule-actions">
+                <p class="schedule-note">
+                    <strong>Note:</strong> Schedule is subject to change. Check back regularly for updates.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Detail Modal -->
+    <div id="event-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true" style="display: none;">
+        <div class="modal-overlay" aria-hidden="true"></div>
+        <div class="modal-content" role="document">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h2 id="modal-title" class="modal-event-title"></h2>
+                <span class="modal-event-category"></span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-event-image">
+                    <img src="" alt="" id="modal-event-img">
+                </div>
+                <div class="modal-event-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Date & Time:</span>
+                        <span id="modal-event-datetime"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Venue:</span>
+                        <span id="modal-event-venue"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Prize Pool:</span>
+                        <span id="modal-event-prize" class="prize-amount"></span>
+                    </div>
+                </div>
+                <div class="modal-event-description">
+                    <h3>About the Event</h3>
+                    <p id="modal-event-desc"></p>
+                </div>
+                <div class="modal-event-rules">
+                    <h3>Rules & Regulations</h3>
+                    <div id="modal-event-rules"></div>
+                </div>
+                <div class="modal-event-contact">
+                    <h3>Contact Person</h3>
+                    <p id="modal-event-contact"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html#register" class="btn btn-primary" id="modal-register-btn">
+                    Register for this Event
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>EventVerse</h3>
+                    <p>Where innovation meets competition. Join us for an unforgettable experience.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <span aria-hidden="true">📘</span>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <span aria-hidden="true">🐦</span>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <span aria-hidden="true">📷</span>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <span aria-hidden="true">💼</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="events.html?category=technical">Technical</a></li>
+                        <li><a href="events.html?category=cultural">Cultural</a></li>
+                        <li><a href="events.html?category=gaming">Gaming</a></li>
+                        <li><a href="events.html?category=workshops">Workshops</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📧 info@eventverse.edu</li>
+                        <li>📞 +91 98765 43210</li>
+                        <li>📍 Tech Campus Arena</li>
+                        <li>🕐 9 AM - 6 PM (Mon-Fri)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EventVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/events-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

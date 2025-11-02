@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact EventVerse organizers and register for the tech fest.">
+    <title>Contact & Register - EventVerse 2025</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" aria-label="EventVerse Home">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">EventVerse</span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="events.html" role="menuitem">Events</a></li>
+                <li role="none"><a href="schedule.html" role="menuitem">Schedule</a></li>
+                <li role="none"><a href="contact.html" role="menuitem" aria-current="page">Contact</a></li>
+                <li role="none"><a href="contact.html#register" class="btn-nav" role="menuitem">Register Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Have questions? We're here to help!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Reach out to us for any queries or assistance regarding EventVerse 2025.</p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon" aria-hidden="true">📧</div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@eventverse.edu">info@eventverse.edu</a></p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon" aria-hidden="true">📞</div>
+                            <h3>Phone</h3>
+                            <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon" aria-hidden="true">📍</div>
+                            <h3>Address</h3>
+                            <p>Tech Campus Arena<br>Innovation Street<br>Tech City, TC 123456</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon" aria-hidden="true">🕐</div>
+                            <h3>Office Hours</h3>
+                            <p>Monday - Friday<br>9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="organizers">
+                        <h3>Key Organizers</h3>
+                        <div class="organizer-card">
+                            <h4>Dr. Rajesh Kumar</h4>
+                            <p class="organizer-role">Event Coordinator</p>
+                            <p class="organizer-contact">📧 rajesh.kumar@eventverse.edu<br>📞 +91 98765 43211</p>
+                        </div>
+                        <div class="organizer-card">
+                            <h4>Priya Sharma</h4>
+                            <p class="organizer-role">Technical Events Head</p>
+                            <p class="organizer-contact">📧 priya.sharma@eventverse.edu<br>📞 +91 98765 43212</p>
+                        </div>
+                        <div class="organizer-card">
+                            <h4>Amit Patel</h4>
+                            <p class="organizer-role">Registration & Logistics</p>
+                            <p class="organizer-contact">📧 amit.patel@eventverse.edu<br>📞 +91 98765 43213</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="contact-map">
+                    <h2>Find Us</h2>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2412648750455!2d-73.98784368459395!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                            width="100%"
+                            height="400"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="EventVerse location map"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration-section" id="register">
+        <div class="container">
+            <div class="registration-header">
+                <h2>Register for EventVerse 2025</h2>
+                <p>Fill out the form below to secure your spot at the biggest tech fest of the year!</p>
+            </div>
+            
+            <form id="registration-form" class="registration-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name <span class="required" aria-label="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="firstName" 
+                            name="firstName" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="firstName-error"
+                        >
+                        <span class="error-message" id="firstName-error" role="alert"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName">Last Name <span class="required" aria-label="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="lastName" 
+                            name="lastName" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="lastName-error"
+                        >
+                        <span class="error-message" id="lastName-error" role="alert"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="email-error"
+                        >
+                        <span class="error-message" id="email-error" role="alert"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required" aria-label="required">*</span></label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="phone-error"
+                            pattern="[0-9]{10}"
+                        >
+                        <span class="error-message" id="phone-error" role="alert"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="college">College/Institution <span class="required" aria-label="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="college" 
+                            name="college" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="college-error"
+                        >
+                        <span class="error-message" id="college-error" role="alert"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="year">Year of Study <span class="required" aria-label="required">*</span></label>
+                        <select 
+                            id="year" 
+                            name="year" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="year-error"
+                        >
+                            <option value="">Select Year</option>
+                            <option value="1">First Year</option>
+                            <option value="2">Second Year</option>
+                            <option value="3">Third Year</option>
+                            <option value="4">Fourth Year</option>
+                            <option value="postgrad">Post Graduate</option>
+                        </select>
+                        <span class="error-message" id="year-error" role="alert"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="events">Events Interested In <span class="required" aria-label="required">*</span></label>
+                    <select 
+                        id="events" 
+                        name="events" 
+                        multiple 
+                        required 
+                        aria-required="true"
+                        aria-describedby="events-error events-help"
+                        size="5"
+                    >
+                        <option value="hackathon">Code Hackathon</option>
+                        <option value="robotics">Robotics Challenge</option>
+                        <option value="ai-workshop">AI/ML Workshop</option>
+                        <option value="webdev">Web Development Competition</option>
+                        <option value="gaming">Gaming Tournament</option>
+                        <option value="design">UI/UX Design Challenge</option>
+                    </select>
+                    <span class="form-help" id="events-help">Hold Ctrl (Cmd on Mac) to select multiple events</span>
+                    <span class="error-message" id="events-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="tshirt">T-Shirt Size <span class="required" aria-label="required">*</span></label>
+                    <select 
+                        id="tshirt" 
+                        name="tshirt" 
+                        required 
+                        aria-required="true"
+                        aria-describedby="tshirt-error"
+                    >
+                        <option value="">Select Size</option>
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                        <option value="XL">Extra Large</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <span class="error-message" id="tshirt-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="dietary">Dietary Preferences (Optional)</label>
+                    <select id="dietary" name="dietary">
+                        <option value="">No Preference</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="non-veg">Non-Vegetarian</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input 
+                            type="checkbox" 
+                            id="terms" 
+                            name="terms" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="terms-error"
+                        >
+                        <span>I agree to the terms and conditions <span class="required" aria-label="required">*</span></span>
+                    </label>
+                    <span class="error-message" id="terms-error" role="alert"></span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-large">Submit Registration</button>
+                    <button type="reset" class="btn btn-secondary">Clear Form</button>
+                </div>
+            </form>
+
+            <!-- Success Message -->
+            <div id="success-message" class="success-message" style="display: none;" role="alert">
+                <div class="success-icon" aria-hidden="true">✓</div>
+                <h3>Registration Successful!</h3>
+                <p>Thank you for registering for EventVerse 2025. We've sent a confirmation email to your registered email address.</p>
+                <p>See you at the fest! 🎉</p>
+                <button class="btn btn-primary" onclick="window.location.reload()">Register Another Person</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>EventVerse</h3>
+                    <p>Where innovation meets competition. Join us for an unforgettable experience.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <span aria-hidden="true">📘</span>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <span aria-hidden="true">🐦</span>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <span aria-hidden="true">📷</span>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <span aria-hidden="true">💼</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="events.html?category=technical">Technical</a></li>
+                        <li><a href="events.html?category=cultural">Cultural</a></li>
+                        <li><a href="events.html?category=gaming">Gaming</a></li>
+                        <li><a href="events.html?category=workshops">Workshops</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📧 info@eventverse.edu</li>
+                        <li>📞 +91 98765 43210</li>
+                        <li>📍 Tech Campus Arena</li>
+                        <li>🕐 9 AM - 6 PM (Mon-Fri)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EventVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/events-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

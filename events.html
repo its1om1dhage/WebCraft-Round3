@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse all EventVerse 2025 events. Filter by category, date, and more.">
+    <title>Events - EventVerse 2025</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" aria-label="EventVerse Home">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">EventVerse</span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="events.html" role="menuitem" aria-current="page">Events</a></li>
+                <li role="none"><a href="schedule.html" role="menuitem">Schedule</a></li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                <li role="none"><a href="contact.html#register" class="btn-nav" role="menuitem">Register Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>All Events</h1>
+            <p>Explore all the exciting events at EventVerse 2025</p>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-catalog">
+        <div class="container">
+            <!-- Filter Controls -->
+            <div class="filter-controls" role="search" aria-label="Event filters">
+                <div class="filter-group">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter" class="filter-select" aria-label="Filter by category">
+                        <option value="all">All Categories</option>
+                        <option value="technical">Technical</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="workshops">Workshops</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="date-filter">Date:</label>
+                    <select id="date-filter" class="filter-select" aria-label="Filter by date">
+                        <option value="all">All Days</option>
+                        <option value="2025-03-15">Day 1 - March 15</option>
+                        <option value="2025-03-16">Day 2 - March 16</option>
+                        <option value="2025-03-17">Day 3 - March 17</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="sort-filter">Sort By:</label>
+                    <select id="sort-filter" class="filter-select" aria-label="Sort events">
+                        <option value="name">Name</option>
+                        <option value="date">Date</option>
+                        <option value="prize">Prize Pool</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <input 
+                        type="search" 
+                        id="search-input" 
+                        class="search-input" 
+                        placeholder="Search events..."
+                        aria-label="Search events"
+                    >
+                </div>
+
+                <button id="reset-filters" class="btn btn-secondary btn-small" aria-label="Reset all filters">
+                    Reset Filters
+                </button>
+            </div>
+
+            <!-- Events Count -->
+            <div class="events-count" aria-live="polite" aria-atomic="true">
+                Showing <span id="event-count">0</span> events
+            </div>
+
+            <!-- Events Grid -->
+            <div class="events-grid" id="events-container" role="list">
+                <!-- Events will be loaded dynamically via JavaScript -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="no-results" style="display: none;" role="status">
+                <p>No events found matching your criteria.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('reset-filters').click()">
+                    Clear Filters
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Detail Modal -->
+    <div id="event-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true" style="display: none;">
+        <div class="modal-overlay" aria-hidden="true"></div>
+        <div class="modal-content" role="document">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h2 id="modal-title" class="modal-event-title"></h2>
+                <span class="modal-event-category"></span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-event-image">
+                    <img src="" alt="" id="modal-event-img">
+                </div>
+                <div class="modal-event-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Date & Time:</span>
+                        <span id="modal-event-datetime"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Venue:</span>
+                        <span id="modal-event-venue"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Prize Pool:</span>
+                        <span id="modal-event-prize" class="prize-amount"></span>
+                    </div>
+                </div>
+                <div class="modal-event-description">
+                    <h3>About the Event</h3>
+                    <p id="modal-event-desc"></p>
+                </div>
+                <div class="modal-event-rules">
+                    <h3>Rules & Regulations</h3>
+                    <div id="modal-event-rules"></div>
+                </div>
+                <div class="modal-event-contact">
+                    <h3>Contact Person</h3>
+                    <p id="modal-event-contact"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html#register" class="btn btn-primary" id="modal-register-btn">
+                    Register for this Event
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>EventVerse</h3>
+                    <p>Where innovation meets competition. Join us for an unforgettable experience.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <span aria-hidden="true">📘</span>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <span aria-hidden="true">🐦</span>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <span aria-hidden="true">📷</span>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <span aria-hidden="true">💼</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="events.html?category=technical">Technical</a></li>
+                        <li><a href="events.html?category=cultural">Cultural</a></li>
+                        <li><a href="events.html?category=gaming">Gaming</a></li>
+                        <li><a href="events.html?category=workshops">Workshops</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📧 info@eventverse.edu</li>
+                        <li>📞 +91 98765 43210</li>
+                        <li>📍 Tech Campus Arena</li>
+                        <li>🕐 9 AM - 6 PM (Mon-Fri)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EventVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/events-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

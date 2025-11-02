@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EventVerse - College Tech Fest 2025. Explore events, workshops, competitions, and more.">
+    <title>EventVerse - Tech Fest 2025</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" aria-label="EventVerse Home">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">EventVerse</span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem" aria-current="page">Home</a></li>
+                <li role="none"><a href="events.html" role="menuitem">Events</a></li>
+                <li role="none"><a href="schedule.html" role="menuitem">Schedule</a></li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                <li role="none"><a href="contact.html#register" class="btn-nav" role="menuitem">Register Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+            <div class="floating-particles" aria-hidden="true">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                <span class="glitch-text" data-text="EventVerse 2025">EventVerse 2025</span>
+            </h1>
+            <p class="hero-subtitle">Where Innovation Meets Competition</p>
+            <p class="hero-description">
+                Join us for the most electrifying tech fest of the year. 
+                Experience cutting-edge technology, compete in thrilling events, 
+                and connect with innovators from across the nation.
+            </p>
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <span class="meta-icon" aria-hidden="true">📅</span>
+                    <span class="meta-text">March 15-17, 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon" aria-hidden="true">📍</span>
+                    <span class="meta-text">Tech Campus Arena</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon" aria-hidden="true">🏆</span>
+                    <span class="meta-text">₹5 Lakhs Prize Pool</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="events.html" class="btn btn-primary">Explore Events</a>
+                <a href="schedule.html" class="btn btn-secondary">View Schedule</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <span>Scroll Down</span>
+            <div class="arrow-down"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About EventVerse</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon" aria-hidden="true">🚀</div>
+                    <h3>Innovation Hub</h3>
+                    <p>Experience the latest in technology, from AI and robotics to blockchain and quantum computing.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon" aria-hidden="true">💡</div>
+                    <h3>Learning Workshops</h3>
+                    <p>Hands-on workshops led by industry experts to enhance your skills and knowledge.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon" aria-hidden="true">🎮</div>
+                    <h3>Competitive Gaming</h3>
+                    <p>Intense esports tournaments with massive prize pools and bragging rights.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon" aria-hidden="true">🎨</div>
+                    <h3>Creative Events</h3>
+                    <p>Showcase your creativity in design, development, and artistic competitions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Events -->
+    <section class="featured-events">
+        <div class="container">
+            <h2 class="section-title">Featured Events</h2>
+            <p class="section-subtitle">Don't miss these highlight events of EventVerse 2025</p>
+            <div class="events-grid" id="featured-events-container">
+                <!-- Events will be loaded dynamically via JavaScript -->
+            </div>
+            <div class="section-cta">
+                <a href="events.html" class="btn btn-primary">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" aria-labelledby="stats-title">
+        <div class="container">
+            <h2 id="stats-title" class="section-title">EventVerse by Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Events</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="5000">0</div>
+                    <div class="stat-label">Expected Participants</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="30">0</div>
+                    <div class="stat-label">Industry Experts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Colleges</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Join the Revolution?</h2>
+            <p>Register now and be part of the biggest tech fest of 2025</p>
+            <a href="contact.html#register" class="btn btn-primary btn-large">Register Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>EventVerse</h3>
+                    <p>Where innovation meets competition. Join us for an unforgettable experience.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <span aria-hidden="true">📘</span>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <span aria-hidden="true">🐦</span>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <span aria-hidden="true">📷</span>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <span aria-hidden="true">💼</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="events.html?category=technical">Technical</a></li>
+                        <li><a href="events.html?category=cultural">Cultural</a></li>
+                        <li><a href="events.html?category=gaming">Gaming</a></li>
+                        <li><a href="events.html?category=workshops">Workshops</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📧 info@eventverse.edu</li>
+                        <li>📞 +91 98765 43210</li>
+                        <li>📍 Tech Campus Arena</li>
+                        <li>🕐 9 AM - 6 PM (Mon-Fri)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EventVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/events-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
