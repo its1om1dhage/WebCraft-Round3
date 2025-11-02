@@ -447,7 +447,7 @@ a:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
+    background: transparent;
     z-index: -1;
 }
 
@@ -726,6 +726,18 @@ a:focus {
 .featured-events {
     padding: var(--spacing-xxl) 0;
     background: var(--bg-dark);
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-events .hero-background {
+    background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
+    z-index: 0;
+}
+
+.featured-events .container {
+    position: relative;
+    z-index: 1;
 }
 
 .events-grid {
